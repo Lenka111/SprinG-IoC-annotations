@@ -1,3 +1,4 @@
+//Elena Voinu
 package com.annotations;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,6 +10,7 @@ public class App {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationcontext.xml");
 
         //retrieve bean from spring container
+     
         Coach theCoach = context.getBean("thatSillyCoach", Coach.class);
 
         System.out.println(theCoach.getDailyWorkout());
